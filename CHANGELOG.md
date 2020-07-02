@@ -2,8 +2,10 @@
 
 ## 2.0 (work in progress)
 
+- Update to Swift 5.3
 - Open any URL in `AcknowListViewController` header and footer
 - TO DO: Support SPM localized resources
+- Require iOS 9
 
 
 ## 1.9.4 (15 April 2020)
