@@ -93,7 +93,7 @@ public struct AcknowListSwiftUIView: View {
                 Text(text)
             }
             else {
-                EmptyView()
+                Text("")
             }
         }
     }
