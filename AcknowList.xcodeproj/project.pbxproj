@@ -18,6 +18,9 @@
 		32A5DE4625C7DD3D00ED11BB /* AcknowListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A5DE3F25C7DD3D00ED11BB /* AcknowListViewController.swift */; };
 		32A5DE4825C7DD3D00ED11BB /* AcknowLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A5DE4125C7DD3D00ED11BB /* AcknowLocalization.swift */; };
 		503E61E9212997CE00322F6C /* Pods-acknowledgements-RegexTesting.plist in Resources */ = {isa = PBXBuildFile; fileRef = 503E61E8212997CD00322F6C /* Pods-acknowledgements-RegexTesting.plist */; };
+		BB818EA02B62B72F0057B23E /* AcknowListURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB818E9F2B62B72F0057B23E /* AcknowListURL.swift */; };
+		BB8545732B227D39001BF421 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8545722B227D39001BF421 /* GitHubAPI.swift */; };
+		BB8545752B227D49001BF421 /* GitHubAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8545742B227D49001BF421 /* GitHubAPITests.swift */; };
 		D70473D225CC4DB0004F2BEC /* Pods-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = D70473D125CC4DB0004F2BEC /* Pods-acknowledgements.plist */; };
 		D70473E525CC530E004F2BEC /* AcknowListTestsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70473E425CC530E004F2BEC /* AcknowListTestsHelpers.swift */; };
 		D705FE2B268A0B0600B501D7 /* AcknowList.docc in Sources */ = {isa = PBXBuildFile; fileRef = D705FE2A268A0B0600B501D7 /* AcknowList.docc */; };
@@ -29,6 +32,9 @@
 		D738F2AE2640342B001BA008 /* AcknowListSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D738F2AD2640342B001BA008 /* AcknowListSwiftUI.swift */; };
 		D7527EE425CAFDB000378FB8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7527EE225CAFDB000378FB8 /* Localizable.strings */; };
 		D78335EF2628934800A380A3 /* AcknowSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78335EE2628934800A380A3 /* AcknowSwiftUI.swift */; };
+		D7A68B452833C2C90064C2C0 /* AcknowList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A68B442833C2C90064C2C0 /* AcknowList.swift */; };
+		D7A68B482833C2D30064C2C0 /* AcknowPodDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A68B462833C2D30064C2C0 /* AcknowPodDecoder.swift */; };
+		D7A68B492833C2D30064C2C0 /* AcknowPackageDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A68B472833C2D30064C2C0 /* AcknowPackageDecoder.swift */; };
 		D7CCBD131D22624B0013F696 /* Pods-acknowledgements-multi.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7CCBD121D22624B0013F696 /* Pods-acknowledgements-multi.plist */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +63,9 @@
 		32A5DE4125C7DD3D00ED11BB /* AcknowLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcknowLocalization.swift; sourceTree = "<group>"; };
 		32A5DE5225C7E2FB00ED11BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		503E61E8212997CD00322F6C /* Pods-acknowledgements-RegexTesting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements-RegexTesting.plist"; sourceTree = "<group>"; };
+		BB818E9F2B62B72F0057B23E /* AcknowListURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcknowListURL.swift; sourceTree = "<group>"; };
+		BB8545722B227D39001BF421 /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		BB8545742B227D49001BF421 /* GitHubAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPITests.swift; sourceTree = "<group>"; };
 		D70473D125CC4DB0004F2BEC /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		D70473E425CC530E004F2BEC /* AcknowListTestsHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcknowListTestsHelpers.swift; sourceTree = "<group>"; };
 		D705FE2A268A0B0600B501D7 /* AcknowList.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AcknowList.docc; sourceTree = "<group>"; };
@@ -81,6 +90,9 @@
 		D7527EF225CAFE0000378FB8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D7527EF325CAFE0700378FB8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D78335EE2628934800A380A3 /* AcknowSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcknowSwiftUI.swift; sourceTree = "<group>"; };
+		D7A68B442833C2C90064C2C0 /* AcknowList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcknowList.swift; sourceTree = "<group>"; };
+		D7A68B462833C2D30064C2C0 /* AcknowPodDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcknowPodDecoder.swift; sourceTree = "<group>"; };
+		D7A68B472833C2D30064C2C0 /* AcknowPackageDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcknowPackageDecoder.swift; sourceTree = "<group>"; };
 		D7CCBD121D22624B0013F696 /* Pods-acknowledgements-multi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements-multi.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +151,7 @@
 				1420A2E31CAEC92200D98F9C /* AcknowLocalizationTests.swift */,
 				1A7421731CAC3685007E44FD /* AcknowParserTests.swift */,
 				1A7421741CAC3685007E44FD /* AcknowViewControllerTests.swift */,
+				BB8545742B227D49001BF421 /* GitHubAPITests.swift */,
 				D70B4286212B2EFF007B6A81 /* Resources */,
 				1AD73B8F1CAC3AEB0084F8CA /* Supporting Files */,
 			);
@@ -166,13 +179,18 @@
 			isa = PBXGroup;
 			children = (
 				32A5DE3A25C7DD3D00ED11BB /* Resources */,
-				32A5DE3C25C7DD3D00ED11BB /* AcknowParser.swift */,
 				32A5DE3D25C7DD3D00ED11BB /* Acknow.swift */,
-				32A5DE3E25C7DD3D00ED11BB /* AcknowViewController.swift */,
+				D7A68B442833C2C90064C2C0 /* AcknowList.swift */,
+				D738F2AD2640342B001BA008 /* AcknowListSwiftUI.swift */,
 				32A5DE3F25C7DD3D00ED11BB /* AcknowListViewController.swift */,
 				32A5DE4125C7DD3D00ED11BB /* AcknowLocalization.swift */,
+				D7A68B472833C2D30064C2C0 /* AcknowPackageDecoder.swift */,
+				32A5DE3C25C7DD3D00ED11BB /* AcknowParser.swift */,
+				D7A68B462833C2D30064C2C0 /* AcknowPodDecoder.swift */,
 				D78335EE2628934800A380A3 /* AcknowSwiftUI.swift */,
-				D738F2AD2640342B001BA008 /* AcknowListSwiftUI.swift */,
+				32A5DE3E25C7DD3D00ED11BB /* AcknowViewController.swift */,
+				BB818E9F2B62B72F0057B23E /* AcknowListURL.swift */,
+				BB8545722B227D39001BF421 /* GitHubAPI.swift */,
 				D705FE2A268A0B0600B501D7 /* AcknowList.docc */,
 			);
 			name = Sources;
@@ -258,7 +276,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = VTourraine;
 				TargetAttributes = {
 					1AA3C3731CAC35190071A7FD = {
@@ -338,8 +356,13 @@
 				32A5DE4425C7DD3D00ED11BB /* Acknow.swift in Sources */,
 				32A5DE4325C7DD3D00ED11BB /* AcknowParser.swift in Sources */,
 				32A5DE4625C7DD3D00ED11BB /* AcknowListViewController.swift in Sources */,
+				D7A68B482833C2D30064C2C0 /* AcknowPodDecoder.swift in Sources */,
 				D705FE2B268A0B0600B501D7 /* AcknowList.docc in Sources */,
+				BB8545732B227D39001BF421 /* GitHubAPI.swift in Sources */,
 				D738F2AE2640342B001BA008 /* AcknowListSwiftUI.swift in Sources */,
+				BB818EA02B62B72F0057B23E /* AcknowListURL.swift in Sources */,
+				D7A68B452833C2C90064C2C0 /* AcknowList.swift in Sources */,
+				D7A68B492833C2D30064C2C0 /* AcknowPackageDecoder.swift in Sources */,
 				D78335EF2628934800A380A3 /* AcknowSwiftUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +374,7 @@
 				1A7421771CAC3685007E44FD /* AcknowViewControllerTests.swift in Sources */,
 				1A7421751CAC3685007E44FD /* AcknowListViewControllerTests.swift in Sources */,
 				D70473E525CC530E004F2BEC /* AcknowListTestsHelpers.swift in Sources */,
+				BB8545752B227D49001BF421 /* GitHubAPITests.swift in Sources */,
 				1A7421761CAC3685007E44FD /* AcknowParserTests.swift in Sources */,
 				1420A2E41CAEC92200D98F9C /* AcknowLocalizationTests.swift in Sources */,
 			);
@@ -394,6 +418,7 @@
 		1AA3C3861CAC35190071A7FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -445,7 +470,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos watchos watchsimulator macosx";
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
@@ -459,6 +485,7 @@
 		1AA3C3871CAC35190071A7FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -503,7 +530,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos watchos watchsimulator macosx";
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 5.0;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -517,6 +545,7 @@
 		1AA3C3891CAC35190071A7FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
@@ -529,6 +558,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.vtourraine.AcknowList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -536,6 +567,7 @@
 		1AA3C38A1CAC35190071A7FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
@@ -548,6 +580,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.vtourraine.AcknowList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;

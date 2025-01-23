@@ -1,10 +1,61 @@
 # Changelog
 
-## 2.1.0 (work in progress)
+## 3.3.0 (work in progress)
+
+- Add initializer to `AcknowListSwiftUI` to load default acknow list, by Tisfeng (@tisfeng)
+- Update `AcknowViewController.acknowledgement` to `open` access level for customizability, by cheshire (@cheshire0105)
+
+
+## 3.2.0 (11 June 2024)
+
+- Add visionOS support
+
+
+## 3.1.0 (25 January 2024)
+
+- Add `GitHubAPI` to get licenses from GitHub API
+- Update `AcknowListViewController` and `AcknowListSwiftUIView` to get missing licenses from GitHub API, with new `canFetchLicenseFromGitHub` property to disable this behavior
+- Add `URL` extension with `openWithDefaultBrowser()` function to fix opening URLs on macOS with SwiftUI
+
+
+## 3.0.1 (24 November 2022)
+
+- Update `AcknowListSwiftUIView` to fix navigation to repository URL
+- Add `AcknowListRowSwiftUIView`
+
+
+## 3.0.0 (17 September 2022)
+
+- Add `AcknowList` struct to represent list model
+- Add `AcknowPackageDecoder` to parse “Package.resolved” files (Swift Package Manager)
+- Refactor plist file parser into `AcknowPodDecoder`
+- Refactor `AcknowParser` to manage parsing different file types
+- Refactor file paths parameters (`String`) into file URLs (`URL`) instead
+- Update `AcknowListViewController` to load acknowledgements from “Package.resolved” by default
+
+
+## 2.1.1 (15 June 2022)
+
+- Follow readable content guides
+- Fix Swift Package Manager warning (exlude DocC folder)
+
+
+## 2.1.0 (12 January 2022)
 
 - Add SwiftUI interface (supports iOS/tvOS/watchOS/macOS)
 - Add DocC resources
 - Fix Xcode 13 support, by Thomas Mellenthin (@melle) and Francesc Bruguera (@ifrins)
+- Update CocoaPods and Swift Package Manager support to require iOS 13/tvOS 13, necessary to support SwiftUI
+
+
+## 2.0.3 (21 September 2021)
+
+- Update `AcknowListViewController` default initializer implementatoin to fix Xcode 13 support
+
+
+## 2.0.2 (17 September 2021)
+
+- Update `AcknowListViewController` to remove Objective-C compatibility, fixing Xcode 13 support
 
 
 ## 2.0.1 (26 April 2021)

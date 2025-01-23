@@ -1,5 +1,5 @@
 //
-// Acknow.swift
+// AcknowListURL.swift
 //
 // Copyright (c) 2015-2025 Vincent Tourraine (https://www.vtourraine.net)
 //
@@ -23,31 +23,23 @@
 
 import Foundation
 
-/// Represents a single acknowledgement.
-public struct Acknow {
+#if os(macOS)
+import AppKit
+#elseif os(iOS)
+import UIKit
+#endif
 
-    /// The acknowledgement title (for instance: the pod or package’s name).
-    public let title: String
-
-    /// The acknowledgement body text (for instance: the pod’s license).
-    public let text: String?
-
-    /// The acknowledgement license (for instance the pod’s license type).
-    public let license: String?
-
-    /// The repository URL (for instance the package’s repository).
-    public let repository: URL?
-
-    /// Returns an object initialized from the given parameters.
-    ///
-    /// - Parameters:
-    ///   - title: The acknowledgement title (for instance: the pod’s name).
-    ///   - text: The acknowledgement body text (for instance: the pod’s license).
-    ///   - license: The acknowledgement license (for instance the pod’s license type).
-    public init(title: String, text: String? = nil, license: String? = nil, repository: URL? = nil) {
-        self.title = title
-        self.text = text
-        self.license = license
-        self.repository = repository
+internal extension URL {
+    func openWithDefaultBrowser() {
+#if os(macOS)
+        NSWorkspace.shared.open(self)
+#elseif os(iOS)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(self)
+        }
+        else {
+            UIApplication.shared.openURL(self)
+        }
+#endif
     }
 }

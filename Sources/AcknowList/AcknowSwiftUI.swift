@@ -1,7 +1,7 @@
 //
 // AcknowSwiftUI.swift
 //
-// Copyright (c) 2015-2021 Vincent Tourraine (https://www.vtourraine.net)
+// Copyright (c) 2015-2025 Vincent Tourraine (https://www.vtourraine.net)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -24,15 +24,11 @@
 import SwiftUI
 
 /// View that displays a single acknowledgement.
-@available(iOS 13.0.0, macOS 10.15.0, watchOS 7.0.0, tvOS 13.0.0, *)
+@available(iOS 13.0.0, macOS 10.15.0, watchOS 7.0.0, tvOS 13.0.0, visionOS 1.0.0, *)
 public struct AcknowSwiftUIView: View {
 
     /// The represented acknowledgement.
-    public var acknowledgement: Acknow
-
-    public init(acknowledgement: Acknow) {
-        self.acknowledgement = acknowledgement
-    }
+    @State public var acknowledgement: Acknow
 
     public var body: some View {
         #if os(macOS)
@@ -40,25 +36,49 @@ public struct AcknowSwiftUIView: View {
             Text(acknowledgement.title)
                 .font(.title)
                 .padding()
-            Text(acknowledgement.text)
+            Text(acknowledgement.text ?? "")
                 .font(.body)
                 .padding()
         }
+        .onAppear {
+            fetchLicenseIfNecessary()
+        }
         #else
         ScrollView {
-            Text(acknowledgement.text)
+            Text(acknowledgement.text ?? "")
                 .font(.body)
                 .padding()
         }
         .navigationBarTitle(acknowledgement.title)
+        .onAppear {
+            fetchLicenseIfNecessary()
+        }
         #endif
+    }
+
+    private func fetchLicenseIfNecessary() {
+        guard acknowledgement.text == nil,
+              let repository = acknowledgement.repository,
+              GitHubAPI.isGitHubRepository(repository) else {
+            return
+        }
+
+        GitHubAPI.getLicense(for: repository) { result in
+            switch result {
+            case .success(let text):
+                acknowledgement = Acknow(title: acknowledgement.title, text: text, license: acknowledgement.license, repository: acknowledgement.repository)
+
+            case .failure:
+                repository.openWithDefaultBrowser()
+            }
+        }
     }
 }
 
-@available(iOS 13.0.0, macOS 10.15.0, watchOS 7.0.0, tvOS 13.0.0, *)
+@available(iOS 13.0.0, macOS 10.15.0, watchOS 7.0.0, tvOS 13.0.0, visionOS 1.0.0, *)
 struct AcknowSwiftUI_Previews: PreviewProvider {
     static let license = """
-    Copyright (c) 2015-2021 Vincent Tourraine (https://www.vtourraine.net)
+    Copyright (c) 2015-2025 Vincent Tourraine (https://www.vtourraine.net)
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
